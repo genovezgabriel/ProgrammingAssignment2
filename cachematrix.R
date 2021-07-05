@@ -9,8 +9,8 @@ makeCacheMatrix <- function(x = matrix()) { ## Creating the function "makeCacheM
     y <<- NULL
   }
   get <- function()    ## returns the value of the matrix
-  setinverse <- function(solve) y <<- solve
-  getinverse <- function() y
+  set_inv <- function(solve) y <<- solve
+  get_inv <- function() y
   list(set = set, get = get,
        set_inv = set_inv,  ## calculates the inverse of the matrix
        get_inv = get_inv)  ## gets the value of the inverse matrix
